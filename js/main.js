@@ -12,6 +12,7 @@ let invaderCols = 10
 
 function preload() {
  invaderSprite = loadImage('images/invaderShip.png')
+ shipSprite = loadImage('images/archibalde_hawk.png')
  // shipSprite = loadImage('archibalde_hawk.png')
 //  invaderSprite = function() {
 //   noStroke();
@@ -31,7 +32,7 @@ function setup() {
 
   // image(invaderSprite, 0, 0)
 
-  ship = new Ship();
+  ship = new Ship(shipSprite);
   invaderWave = new InvaderWave(width/2, height/4, invaderRows, invaderCols, invaderSprite);
   invaderWave.init();
 }
