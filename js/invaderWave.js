@@ -8,8 +8,8 @@ function InvaderWave(x, y, row, col, sprite) {
   this.cols = col;
 
   this.aliens; // This is here as a reference.
-  this.alienRadius = 20;
-  this.alienSpacing = 1.5;
+  this.alienRadius = 40;
+  this.alienSpacing = 1.3;
 
   this.xSpeed = 1;
   this.speedIncrease = 0.05;
