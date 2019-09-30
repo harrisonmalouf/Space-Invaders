@@ -10,27 +10,11 @@ function Invader(x, y, r, sprite) {
   this.show = function() {
     imageMode(CENTER);
     image(this.sprite, this.x, this.y, this.r, this.r)
-    // noStroke();
-    // rectMode(CENTER);
-    // ellipse(this.x, this.y, this.r, this.r);
   }
 
-  // this.move = function() {
-  //   this.x += this.xdir;
-  // }
-  //
-  // this.moveDown = function() {
-  //   this.xdir *= -1;
-  //   this.y += this.r;
-  // }
-
-  // this.shoot = function(bullets, shootRate) {
-  //   if(random() < shootRate ) {
-  //     bullets.push(new Bullet(this.x, this.y, false));
-  //   }
-  // }
-  //
-  // this.death = function () {
-  //   this.destroy = true;
-  // }
+  this.shoot = function(bullets, shootRate) {
+    if(random() < shootRate) {
+      bullets.push(new Bullet(this.x, this.y, false));
+    }
+  }
 }
